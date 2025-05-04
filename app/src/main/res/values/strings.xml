@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">av2-pos-moveis</string>
+    <string name="app_name">CashFlowApp</string>
+    <string name="lan_amentos_recentes">Lançamentos Recentes</string>
+    <string name="despesas">Despesas</string>
+    <string name="receitas">Receitas</string>
+    <string name="saldo">Saldo</string>
+    <string name="cr_dito">Crédito</string>
+    <string name="d_bito">Débito</string>
+    <string name="descri_o">Descrição</string>
+    <string name="valor_r">Valor (R$)</string>
+    <string name="selecione_a_categoria">Selecione a categoria</string>
+    <string name="data">Data</string>
+    <string name="lan_ar">Lançar</string>
 </resources>

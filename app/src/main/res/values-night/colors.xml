@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#FF303030</color>
+    <color name="primary_variant_dark">#FF000000</color>
+    <color name="secondary_gray">#FFBDBDBD</color>
+    <color name="on_primary_white">#FFFFFFFF</color>
+    <color name="on_secondary_black">#FF000000</color>
+    <color name="text_primary_dark">#FFFFFFFF</color>
+    <color name="text_secondary_dark">#B3FFFFFF</color>
+    <color name="background_light">#FF121212</color>
+    <color name="surface_light">#FF1E1E1E</color>
+    <color name="border_light">#1FFFFFFF</color>
+    <color name="chart_text_color">@color/text_primary_dark</color>
+    <color name="toggle_button_selected_background">#FFCCCCCC</color>
+    <color name="toggle_button_selected_text">@color/black</color>
+    <color name="toggle_button_unselected_background">#FF303030</color>
+    <color name="toggle_button_unselected_text">#B3FFFFFF</color>
+</resources>

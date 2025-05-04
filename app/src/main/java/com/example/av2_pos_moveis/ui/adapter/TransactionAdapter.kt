@@ -1,15 +1,15 @@
 package com.example.av2_pos_moveis.ui.adapter
 
-import com.example.av2_pos_moveis.data.model.Transaction
-import com.example.av2_pos_moveis.databinding.ItemTransactionBinding
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.av2_pos_moveis.R
+import com.example.av2_pos_moveis.data.model.Transaction
+import com.example.av2_pos_moveis.databinding.ItemTransactionBinding
 import java.util.Locale
 
 interface OnTransactionActionListener {
@@ -42,7 +42,11 @@ class TransactionAdapter(
 
         fun bind(transaction: Transaction) {
             binding.textDate.text = transaction.date
-            binding.textCategory.text = "${transaction.category} (${transaction.type})"
+            binding.textCategory.text = transaction.category
+
+
+            val categoryIconResId = getIconForCategory(transaction.category)
+            binding.iconCategory.setImageResource(categoryIconResId)
 
             val formattedAmount = String.format(Locale("pt", "BR"), "R$ %.2f", transaction.amount)
 
@@ -59,6 +63,18 @@ class TransactionAdapter(
             }
             binding.buttonDeleteItem.setOnClickListener {
                 listener.onDeleteClick(transaction)
+            }
+        }
+
+        @DrawableRes
+        private fun getIconForCategory(category: String): Int {
+            return when (category.lowercase(Locale.getDefault())) {
+                "salário" -> R.drawable.ic_work
+                "alimentação" -> R.drawable.ic_restaurant
+                "transporte" -> R.drawable.ic_direction_bus
+                "saúde" -> R.drawable.ic_favorite
+                "moradia" -> R.drawable.ic_home
+                else -> R.drawable.ic_help_outline
             }
         }
     }

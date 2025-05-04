@@ -1,7 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Av2posmoveis" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Theme.Av2posmoveis" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary_white</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_white</item>
+
+        <item name="colorSecondary">@color/secondary_gray</item>
+        <item name="colorOnSecondary">@color/on_secondary_black</item>
+        <item name="colorSecondaryContainer">#FF424242</item>
+        <item name="colorOnSecondaryContainer">@color/text_primary_dark</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnBackground">@color/text_primary_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_dark</item>
+        <item name="colorControlNormal">@color/secondary_gray</item>
+        <item name="colorOutline">@color/border_light</item>
+        <item name="android:statusBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:colorEdgeEffect">@color/secondary_gray</item>
+        <item name="materialAlertDialogTheme">@style/Widget.App.Button.TextButton.Dialog</item>
+        
     </style>
 </resources>

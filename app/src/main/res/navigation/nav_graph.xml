@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home_entry">
+
+    <fragment
+        android:id="@+id/navigation_home_entry"
+        android:name="com.example.av2_pos_moveis.ui.fragments.HomeEntryFragment"
+        android:label="Início"
+        tools:layout="@layout/fragment_home_entry" />
+
+    <fragment
+        android:id="@+id/navigation_statement"
+        android:name="com.example.av2_pos_moveis.ui.fragments.StatementFragment"
+        android:label="Lançamentos"
+        tools:layout="@layout/fragment_statement" />
+
+    <fragment
+        android:id="@+id/navigation_report"
+        android:name="com.example.av2_pos_moveis.ui.fragments.ReportFragment"
+        android:label="Relatórios"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/navigation_entry_edit"
+        android:name="com.example.av2_pos_moveis.ui.fragments.HomeEntryFragment"
+        android:label="Editar Lançamento"
+        tools:layout="@layout/fragment_home_entry" >
+        <argument
+            android:name="transactionId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <action android:id="@+id/action_statement_to_edit"
+        app:destination="@id/navigation_entry_edit"/>
+
+
+</navigation>

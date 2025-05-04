@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase
 import com.example.av2_pos_moveis.data.dao.TransactionDao
 import com.example.av2_pos_moveis.data.model.Transaction
 
-@Database(entities = [Transaction::class], version = 1, exportSchema = false)
+@Database(entities = [Transaction::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun transactionDao(): TransactionDao
@@ -22,6 +22,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "cash_flow_database"
                 )
+                    .fallbackToDestructiveMigration(false)
                     .build()
                 INSTANCE = instance
                 instance

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.Button.TextButton.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+    <style name="Widget.App.Button.TextButton.Dialog.Positive" parent="Widget.App.Button.TextButton.Dialog" />
+    <style name="Widget.App.Button.TextButton.Dialog.Negative" parent="Widget.App.Button.TextButton.Dialog" />
+    <style name="Widget.App.Button.TextButton.Dialog.Neutral" parent="Widget.App.Button.TextButton.Dialog"/>
+
+</resources>
