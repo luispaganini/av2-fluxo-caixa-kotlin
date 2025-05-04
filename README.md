@@ -32,12 +32,12 @@ O objetivo é permitir ao usuário registrar, visualizar, editar e excluir suas 
 
 | Modo Claro                                        | Modo Escuro                                        |
 | :------------------------------------------------: | :------------------------------------------------: |
-| ![Tela Inicial (Modo Claro)](./screenshots/home_entry_light.png) | ![Tela Inicial (Modo Escuro)](./screenshots/home_entry_dark.png) |
 | *Tela Inicial/Lançamento* | *Tela Inicial/Lançamento* |
-| ![Tela Lançamentos (Modo Claro)](./screenshots/statement_light.png) | ![Tela Lançamentos (Modo Escuro)](./screenshots/statement_dark.png) |
+| ![Tela Inicial (Modo Claro)](./screenshots/home_entry_light.png) | ![Tela Inicial (Modo Escuro)](./screenshots/home_entry_dark.png) |
 | *Tela de Extrato/Lista* | *Tela de Extrato/Lista* |
-| ![Tela Relatórios (Modo Claro)](./screenshots/report_light.png) | ![Tela Relatórios (Modo Escuro)](./screenshots/report_dark.png) |
+| ![Tela Lançamentos (Modo Claro)](./screenshots/statement_light.png) | ![Tela Lançamentos (Modo Escuro)](./screenshots/statement_dark.png) |
 | *Tela de Relatórios/Gráficos* | *Tela de Relatórios/Gráficos* |
+| ![Tela Relatórios (Modo Claro)](./screenshots/report_light.png) | ![Tela Relatórios (Modo Escuro)](./screenshots/report_dark.png) |
 
 ## 🛠️ Tecnologias Utilizadas
 
